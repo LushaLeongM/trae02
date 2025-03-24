@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority First - Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Priority First</h1>
+            <p class="tagline">Begin with the end in mind. Put first things first.</p>
+        </header>
+        
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <div class="priority-selector">
+                <select id="quadrantSelect">
+                    <option value="q1">Q1: Important & Urgent</option>
+                    <option value="q2">Q2: Important & Not Urgent</option>
+                    <option value="q3">Q3: Not Important & Urgent</option>
+                    <option value="q4">Q4: Not Important & Not Urgent</option>
+                </select>
+            </div>
+            <button id="addTask">Add Task</button>
+        </div>
+        
+        <div class="matrix-container">
+            <div class="quadrant" id="q1">
+                <h2>Q1: Important & Urgent</h2>
+                <p class="quadrant-desc">Crisis, pressing problems, deadline-driven projects</p>
+                <ul class="task-list" id="q1-tasks"></ul>
+            </div>
+            <div class="quadrant" id="q2">
+                <h2>Q2: Important & Not Urgent</h2>
+                <p class="quadrant-desc">Planning, prevention, relationship building, true recreation</p>
+                <ul class="task-list" id="q2-tasks"></ul>
+            </div>
+            <div class="quadrant" id="q3">
+                <h3>Q3: Not Important & Urgent</h3>
+                <p class="quadrant-desc">Interruptions, some meetings, many pressing matters</p>
+                <ul class="task-list" id="q3-tasks"></ul>
+            </div>
+            <div class="quadrant" id="q4">
+                <h3>Q4: Not Important & Not Urgent</h3>
+                <p class="quadrant-desc">Trivia, busy work, time wasters, pleasant activities</p>
+                <ul class="task-list" id="q4-tasks"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
